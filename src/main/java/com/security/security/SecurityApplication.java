@@ -25,7 +25,7 @@ public class SecurityApplication implements CommandLineRunner{
 		if (adminAccount==null) {
 			User admin=new User();
 			
-			admin.setFull_name("Phan Thanh Luc");
+			admin.setFullname("Phan Thanh Luc");
 			admin.setEmail("phanthanhluc2003@gmail.com");
 			admin.setRole(Role.ADMIN);
 			admin.setPassword(new BCryptPasswordEncoder().encode("Luc@gmail.com"));
